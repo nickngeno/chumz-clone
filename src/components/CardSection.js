@@ -11,9 +11,9 @@ import  crosshair from "../images/crosshair.1c802f70.svg"
 
 const CardSection = () => {
   return (
-    <>
-      <Container fluid>
-        <CardGroup className="new-section">
+    <section className="new-section">
+      <Container fluid style={{backgroundColor:"yellow"}}>
+        <CardGroup>
           <Card className="text-center card-item p-5">
             <Card.Body>
             <Card.Img src={crosshair} style={{width:"40px"}} />
@@ -73,7 +73,7 @@ const CardSection = () => {
           </Card>
         </CardGroup>
       </Container>
-    </>
+    </section>
   );
 };
 

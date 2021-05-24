@@ -11,13 +11,13 @@ body {
 h2{
   font-size: 4rem !important;
   font-weight: 800 !important;
+  padding-bottom: 2rem !important;
   /* color: red; */
 }
 
 .hero{
   background-image: url('../src/images/banner-pattern.f9c26340.svg');
   max-height: 600px;
-  padding: 2rem 0 0;
   overflow: hidden;
 }
 
@@ -32,17 +32,18 @@ h2{
   
 }
 .hero-text p{
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .hero-right{
-  /* background-color: red; */
   display: flex;
   justify-content: center;
   align-items: center;
  
 }
 .new-section{
-  padding-top: 6rem;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  background-color: rgb(197, 195, 195);
 
 }
 .goals-text{
@@ -61,7 +62,7 @@ h2{
   color: #fff;
 }
 .chama{
-  height: 400px;
+  height: 700px;
   background-image: url("../src/images/chama.2f930712.png");
   background-position:center ;
   background-size: contain;
@@ -73,10 +74,9 @@ h2{
 }
 .leaderboard{
   height: 900px;
-  background-image: url('../src/images/competition.b8a95f11.png');
-  /* background-color: wheat; */
-  /* background-position:center ; */
-  background-size: cover;
+  background-image: url("../src/images/competition.b8a95f11.png");
+  background-position:center ;
+  background-size: contain;
   background-repeat: no-repeat;
-  margin-bottom: 6rem;
+
 }

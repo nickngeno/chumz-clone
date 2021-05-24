@@ -4,8 +4,8 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const leaderBoard = () => {
   return (
-    <>
-      <Container className="new-section">
+    <section className="new-section">
+      <Container >
         <Row>
           <Col
             lg={12}
@@ -20,7 +20,7 @@ const leaderBoard = () => {
       </Container>
       <Container fluid className="leaderboard" ></Container>
       
-    </>
+    </section>
   );
 };
 

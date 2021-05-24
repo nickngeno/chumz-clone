@@ -3,9 +3,9 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import goals from "../images/secion2image.png";
 const Goals = () => {
   return (
-    <>
-      <Container fluid>
-        <Container className="new-section">
+    <section className="new-section">
+      <Container fluid style={{backgroundColor:"red"}}>
+        <Container>
           <Row>
             <Col lg={5} sm={12}>
               <img src={goals} alt="goals" style={{ width: "350px" }} />
@@ -23,7 +23,7 @@ const Goals = () => {
           </Row>
         </Container>
       </Container>
-    </>
+    </section>
   );
 };
 

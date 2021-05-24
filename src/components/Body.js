@@ -4,6 +4,8 @@ import Hero from "./Hero";
 import CardSection from "./CardSection";
 import Groups from "./Groups";
 import LeaderBoard from "./LeaderBoard";
+import CuratedSaving from "./CuratedSaving";
+import Testimonial from "./Testimonial";
 
 const Body = () => {
   return (
@@ -13,6 +15,8 @@ const Body = () => {
       <CardSection />
       <Groups />
       <LeaderBoard />
+      <CuratedSaving />
+      <Testimonial />
     </>
   );
 };

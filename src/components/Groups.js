@@ -6,25 +6,26 @@ import history from "../images/downloadprocess3.png";
 
 const Groups = () => {
   return (
-    <>
-      <Container className="new-section">
-        <Row>
-          <Col
-            lg={8}
-            className="d-flex flex-column align-items-center justify-content-center offset-lg-2"
-            style={{ textAlign: "center" }}
-          >
-            <h2>Forget Whatsapp groups save on chumz</h2>
-            <p>
-              Join forces with friends, family, chama, colleagues to save for a
-              common goal
-            </p>
-            <Button variant="btn btn-danger ">Learn more</Button>
-          </Col>
-        </Row>
-      </Container>
-      <Container fluid className="chama"></Container>
-      <Container className="new-section" >
+    <section className="new-section">
+      <Container fluid style={{backgroundColor:"pink"}}>
+        <Container>
+          <Row>
+            <Col
+              lg={8}
+              className="d-flex flex-column align-items-center justify-content-center offset-lg-2"
+              style={{ textAlign: "center" }}
+            >
+              <h2>Forget Whatsapp groups save on chumz</h2>
+              <p>
+                Join forces with friends, family, chama, colleagues to save for
+                a common goal
+              </p>
+              <Button variant="btn btn-danger ">Learn more</Button>
+            </Col>
+          </Row>
+        </Container>
+        <Container fluid className="chama mb-3"></Container>
+        <Container>
           <CardDeck className="card-process">
             <Card className="text-center">
               <Card.Body>
@@ -45,8 +46,9 @@ const Groups = () => {
               </Card.Body>
             </Card>
           </CardDeck>
+        </Container>
       </Container>
-    </>
+    </section>
   );
 };
 
