@@ -4,7 +4,7 @@ import goals from "../images/secion2image.png";
 const Goals = () => {
   return (
     <section className="new-section">
-      <Container fluid style={{backgroundColor:"red"}}>
+      <Container fluid>
         <Container>
           <Row>
             <Col lg={5} sm={12}>

@@ -6,8 +6,8 @@ import testimanial3 from "../images/testimonial-3.3d88bcce.png";
 
 const Testimonial = () => {
   return (
-    <section className="new-section">
-      <Container fluid style={{ backgroundColor: "azure" }}>
+    <section className="new-section" >
+      <Container fluid>
         <Container>
           <Row>
             <Col
@@ -23,13 +23,12 @@ const Testimonial = () => {
         </Container>
         <Container>
           <CardDeck>
-            <Card className="text-white bg-success">
+            <Card className="text-dark bg-light border-0 shadow">
               <Card.Body >
               <div className="d-flex justify-content-end">
                   <img
                     src={testimanial1}
                     alt="testimonial"
-                    style={{ height: "auto" }}
                   />
                 </div>
                 <Card.Title>Jack kinga</Card.Title>
@@ -39,13 +38,12 @@ const Testimonial = () => {
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card className="text-white bg-success">
+            <Card className="text-dark bg-light border-0 shadow">
               <Card.Body>
-                <div className="d-flex justify-content-end">
+                <div className="d-flex justify-content-end ">
                   <img
                     src={testimanial2}
                     alt="testimonial"
-                    style={{ height: "" }}
                   />
                 </div>
                 <Card.Title>Kelvin Kamau </Card.Title>
@@ -54,13 +52,12 @@ const Testimonial = () => {
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card className="text-white bg-success">
+            <Card className="text-dark bg-light border-0 shadow">
               <Card.Body>
               <div className="d-flex justify-content-end">
                   <img
                     src={testimanial3}
                     alt="testimonial"
-                    style={{ height: "250px" }}
                   />
                 </div>
                 <Card.Title>Emily wakarima</Card.Title>

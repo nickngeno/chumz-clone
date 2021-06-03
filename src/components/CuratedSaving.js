@@ -13,7 +13,7 @@ import graduation from "../images/graduation.cd424adf.jpg";
 const CuratedSaving = () => {
   return (
     <section className="new-section">
-      <Container fluid style={{ backgroundColor: "purple" }}>
+      <Container fluid>
         <Container>
           <Row>
             <Col

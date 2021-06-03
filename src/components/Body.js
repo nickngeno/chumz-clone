@@ -6,6 +6,9 @@ import Groups from "./Groups";
 import LeaderBoard from "./LeaderBoard";
 import CuratedSaving from "./CuratedSaving";
 import Testimonial from "./Testimonial";
+import CallToAction from "./CallToAction";
+import Contacts from "./Contacts";
+
 
 const Body = () => {
   return (
@@ -17,6 +20,8 @@ const Body = () => {
       <LeaderBoard />
       <CuratedSaving />
       <Testimonial />
+      <CallToAction/>
+      <Contacts />
     </>
   );
 };
