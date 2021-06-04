@@ -131,3 +131,29 @@ h2 {
   transform: scale(1.5);
   transition: all 0.75s ease-in-out;
 }
+
+@media screen and (max-width:768px) {
+  .hero-right{
+    display: none;
+  }
+  h2{
+    text-align: center;
+  }
+  .calltoAction{
+    padding: 1rem;
+    height: auto;
+  }
+  .footer p{
+    display: none;
+  }
+  .social-media li{
+    margin-bottom: 0.5rem;
+  }
+  .leaderboard , .chama{
+    height: 500px;
+  }
+  .img-responsive{
+    width: 100%;
+    height: auto;
+  }
+}

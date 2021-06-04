@@ -11,7 +11,7 @@ const Testimonial = () => {
         <Container>
           <Row>
             <Col
-              lg={12}
+              sm={12}
               className="d-flex flex-column align-items-center justify-content-center"
             >
               <h2>Testimononials</h2>
@@ -29,6 +29,7 @@ const Testimonial = () => {
                   <img
                     src={testimanial1}
                     alt="testimonial"
+                    className="img-responsive"
                   />
                 </div>
                 <Card.Title>Jack kinga</Card.Title>
@@ -44,6 +45,8 @@ const Testimonial = () => {
                   <img
                     src={testimanial2}
                     alt="testimonial"
+                    className="img-responsive"
+                    
                   />
                 </div>
                 <Card.Title>Kelvin Kamau </Card.Title>
@@ -58,6 +61,7 @@ const Testimonial = () => {
                   <img
                     src={testimanial3}
                     alt="testimonial"
+                    className="img-responsive"
                   />
                 </div>
                 <Card.Title>Emily wakarima</Card.Title>

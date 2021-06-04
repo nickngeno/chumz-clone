@@ -42,7 +42,7 @@ const Footer = () => {
               <img
                 src={pigicon}
                 alt=""
-                style={{ width: "40px", marginBottom: "1rem" }}
+                style={{ width: "30px", marginBottom: "1rem" }}
               />
               <p>
                 We are a community dedicated to achieving personal financial

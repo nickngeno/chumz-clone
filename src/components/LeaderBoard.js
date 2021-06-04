@@ -8,7 +8,7 @@ const leaderBoard = () => {
       <Container >
         <Row>
           <Col
-            lg={12}
+            sm={12} lg={12}
             className="d-flex flex-column align-items-end justify-content-center"
           >
             <h2>Test your grit in our savings leaderboard</h2>

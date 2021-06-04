@@ -8,13 +8,13 @@ const CallToAction = () => {
         <Container>
           <Row className="calltoAction">
             <Col
-              sm={4}
+              lg={4} sm={12}
               className="d-flex justify-content-center align-items-center"
             >
               <h3>Ready to get started?</h3>
             </Col>
             <Col
-              sm={4}
+               lg={4} sm={12}
               className="d-flex justify-content-center align-items-center"
             >
               <p>
@@ -23,7 +23,7 @@ const CallToAction = () => {
               </p>
             </Col>
             <Col
-              sm={4}
+               lg={4} sm={12}
               className="d-flex justify-content-center align-items-center"
             >
               <Button className="btn btn-danger bg-gradient">
