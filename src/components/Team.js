@@ -1,15 +1,17 @@
-import React,{useEffect} from "react";
-import { Container, Row, Col, Card, CardDeck } from "react-bootstrap";
-import crosshair from "../images/graduation.cd424adf.jpg";
+import React, { useEffect } from "react";
+import { Container, Row, Col, Card, CardColumns,Image } from "react-bootstrap";
 import Contacts from "./Contacts";
+import { Members } from "../Members";
 
 const Team = () => {
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
+
+  const data = Members;
 
   return (
-    <section classname="new-section">
+    <section className="new-section">
       <Container>
         <Row className="mt-3">
           <Col>
@@ -17,264 +19,31 @@ const Team = () => {
           </Col>
         </Row>
         <Row className="team-stack">
-          <CardDeck>
-            <Card>
-              <div className="d-flex justify-content-center">
-                <img
-                  src={crosshair}
-                  alt="profile pic"
+          <CardColumns>
+            {data.map((member, index) => (
+              <Card key={index}>
+                <div className="d-flex justify-content-center">
+                  <Image 
+                  src={member.image}
+                  roundedCircle
                   style={{
-                    width: "250px",
-                    height: "250px",
-                    borderRadius: "50%",
-                  }}
-                />
-              </div>
-              <Card.Body className="text-center">
-                <Card.Title>Nicholas Ngeno</Card.Title>
-                <Card.Subtitle className="text-muted mb-3">
-                  Software Developer
-                </Card.Subtitle>
-                <Card.Subtitle>Background</Card.Subtitle>
-                <Card.Text className="text-muted">
-                  Bsc Informatics (Moi University)
-                </Card.Text>
-                <Card.Subtitle>Passion</Card.Subtitle>
-                <Card.Text className="text-muted">
-                  Solving specific end-user problems and developing solutions
-                  that align towards users' experience
-                </Card.Text>
-              </Card.Body>
-            </Card>
-            <Card>
-              <div className="d-flex justify-content-center">
-                <img
-                  src={crosshair}
-                  alt="profile pic"
-                  style={{
-                    width: "250px",
-                    height: "250px",
-                    borderRadius: "50%",
-                  }}
-                />
-              </div>
-              <Card.Body className="text-center">
-                <Card.Title>Nicholas Ngeno</Card.Title>
-                <Card.Subtitle className="text-muted mb-3">
-                  Software Developer
-                </Card.Subtitle>
-                <Card.Subtitle>Background</Card.Subtitle>
-                <Card.Text className="text-muted">
-                  Bsc Informatics (Moi University)
-                </Card.Text>
-                <Card.Subtitle>Passion</Card.Subtitle>
-                <Card.Text className="text-muted">
-                  Solving specific end-user problems and developing solutions
-                  that align towards users' experience
-                </Card.Text>
-              </Card.Body>
-            </Card>
-            <Card>
-              <div className="d-flex justify-content-center">
-                <img
-                  src={crosshair}
-                  alt="profile pic"
-                  style={{
-                    width: "250px",
-                    height: "250px",
-                    borderRadius: "50%",
-                  }}
-                />
-              </div>
-              <Card.Body className="text-center">
-                <Card.Title>Nicholas Ngeno</Card.Title>
-                <Card.Subtitle className="text-muted mb-3">
-                  Software Developer
-                </Card.Subtitle>
-                <Card.Subtitle>Background</Card.Subtitle>
-                <Card.Text className="text-muted">
-                  Bsc Informatics (Moi University)
-                </Card.Text>
-                <Card.Subtitle>Passion</Card.Subtitle>
-                <Card.Text className="text-muted">
-                  Solving specific end-user problems and developing solutions
-                  that align towards users' experience
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </CardDeck>
-          <CardDeck className="mt-4">
-            <Card>
-              <div className="d-flex justify-content-center">
-                <img
-                  src={crosshair}
-                  alt="profile pic"
-                  style={{
-                    width: "250px",
-                    height: "250px",
-                    borderRadius: "50%",
-                  }}
-                />
-              </div>
-              <Card.Body className="text-center">
-                <Card.Title>Nicholas Ngeno</Card.Title>
-                <Card.Subtitle className="text-muted mb-3">
-                  Software Developer
-                </Card.Subtitle>
-                <Card.Subtitle>Background</Card.Subtitle>
-                <Card.Text className="text-muted">
-                  Bsc Informatics (Moi University)
-                </Card.Text>
-                <Card.Subtitle>Passion</Card.Subtitle>
-                <Card.Text className="text-muted">
-                  Solving specific end-user problems and developing solutions
-                  that align towards users' experience
-                </Card.Text>
-              </Card.Body>
-            </Card>
-            <Card>
-              <div className="d-flex justify-content-center">
-                <img
-                  src={crosshair}
-                  alt="profile pic"
-                  style={{
-                    width: "250px",
-                    height: "250px",
-                    borderRadius: "50%",
-                  }}
-                />
-              </div>
-              <Card.Body className="text-center">
-                <Card.Title>Nicholas Ngeno</Card.Title>
-                <Card.Subtitle className="text-muted mb-3">
-                  Software Developer
-                </Card.Subtitle>
-                <Card.Subtitle>Background</Card.Subtitle>
-                <Card.Text className="text-muted">
-                  Bsc Informatics (Moi University)
-                </Card.Text>
-                <Card.Subtitle>Passion</Card.Subtitle>
-                <Card.Text className="text-muted">
-                  Solving specific end-user problems and developing solutions
-                  that align towards users' experience
-                </Card.Text>
-              </Card.Body>
-            </Card>
-            <Card>
-              <div className="d-flex justify-content-center">
-                <img
-                  src={crosshair}
-                  alt="profile pic"
-                  style={{
-                    width: "250px",
-                    height: "250px",
-                    borderRadius: "50%",
-                  }}
-                />
-              </div>
-              <Card.Body className="text-center">
-                <Card.Title>Nicholas Ngeno</Card.Title>
-                <Card.Subtitle className="text-muted mb-3">
-                  Software Developer
-                </Card.Subtitle>
-                <Card.Subtitle>Background</Card.Subtitle>
-                <Card.Text className="text-muted">
-                  Bsc Informatics (Moi University)
-                </Card.Text>
-                <Card.Subtitle>Passion</Card.Subtitle>
-                <Card.Text className="text-muted">
-                  Solving specific end-user problems and developing solutions
-                  that align towards users' experience
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </CardDeck>
-          <CardDeck className="mt-4">
-            <Card>
-              <div className="d-flex justify-content-center">
-                <img
-                  src={crosshair}
-                  alt="profile pic"
-                  style={{
-                    width: "250px",
-                    height: "250px",
-                    borderRadius: "50%",
-                  }}
-                />
-              </div>
-              <Card.Body className="text-center">
-                <Card.Title>Nicholas Ngeno</Card.Title>
-                <Card.Subtitle className="text-muted mb-3">
-                  Software Developer
-                </Card.Subtitle>
-                <Card.Subtitle>Background</Card.Subtitle>
-                <Card.Text className="text-muted">
-                  Bsc Informatics (Moi University)
-                </Card.Text>
-                <Card.Subtitle>Passion</Card.Subtitle>
-                <Card.Text className="text-muted">
-                  Solving specific end-user problems and developing solutions
-                  that align towards users' experience
-                </Card.Text>
-              </Card.Body>
-            </Card>
-            <Card>
-              <div className="d-flex justify-content-center">
-                <img
-                  src={crosshair}
-                  alt="profile pic"
-                  style={{
-                    width: "250px",
-                    height: "250px",
-                    borderRadius: "50%",
-                  }}
-                />
-              </div>
-              <Card.Body className="text-center">
-                <Card.Title>Nicholas Ngeno</Card.Title>
-                <Card.Subtitle className="text-muted mb-3">
-                  Software Developer
-                </Card.Subtitle>
-                <Card.Subtitle>Background</Card.Subtitle>
-                <Card.Text className="text-muted">
-                  Bsc Informatics (Moi University)
-                </Card.Text>
-                <Card.Subtitle>Passion</Card.Subtitle>
-                <Card.Text className="text-muted">
-                  Solving specific end-user problems and developing solutions
-                  that align towards users' experience
-                </Card.Text>
-              </Card.Body>
-            </Card>
-            <Card>
-              <div className="d-flex justify-content-center">
-                <img
-                  src={crosshair}
-                  alt="profile pic"
-                  style={{
-                    width: "250px",
-                    height: "250px",
-                    borderRadius: "50%",
-                  }}
-                />
-              </div>
-              <Card.Body className="text-center">
-                <Card.Title>Nicholas Ngeno</Card.Title>
-                <Card.Subtitle className="text-muted mb-3">
-                  Software Developer
-                </Card.Subtitle>
-                <Card.Subtitle>Background</Card.Subtitle>
-                <Card.Text className="text-muted">
-                  Bsc Informatics (Moi University)
-                </Card.Text>
-                <Card.Subtitle>Passion</Card.Subtitle>
-                <Card.Text className="text-muted">
-                  Solving specific end-user problems and developing solutions
-                  that align towards users' experience
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </CardDeck>
+                    width: "171px",
+                    height: "180px",
+                  }} />
+                </div>
+                <Card.Body className="text-center">
+                  <Card.Title>{member.name}</Card.Title>
+                  <Card.Subtitle className="text-muted mb-3">
+                   {member.title}
+                  </Card.Subtitle>
+                  <Card.Subtitle>Background</Card.Subtitle>
+                  <Card.Text className="text-muted">{member.degree}</Card.Text>
+                  <Card.Subtitle>Passion</Card.Subtitle>
+                  <Card.Text className="text-muted">{member.passion}</Card.Text>
+                </Card.Body>
+              </Card>
+            ))}
+          </CardColumns>
         </Row>
       </Container>
       <Contacts />
