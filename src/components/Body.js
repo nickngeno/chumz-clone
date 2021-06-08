@@ -8,9 +8,15 @@ import CuratedSaving from "./CuratedSaving";
 import Testimonial from "./Testimonial";
 import CallToAction from "./CallToAction";
 import Contacts from "./Contacts";
+import {useEffect} from 'react'
 
 
 const Body = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+  
   return (
     <>
       <Hero />

@@ -1,8 +1,12 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Contacts from "./Contacts";
 
 const Faqs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <section className="new-section">
       <Container>

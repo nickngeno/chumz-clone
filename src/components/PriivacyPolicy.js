@@ -1,8 +1,15 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Contacts from "./Contacts";
+import { useEffect } from 'react'
+
 
 const PrivacyPolicy = () => {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+  
   return (
     <section className="new-section">
       <Container>

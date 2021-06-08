@@ -7,6 +7,7 @@ import Terms from "./components/Terms";
 import Faqs from "./components/Faqs";
 import PrivacyPolicy from "./components/PriivacyPolicy";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
@@ -21,8 +22,8 @@ function App() {
           <Route path="/faqs" component={Faqs} />
           <Route path="/privacy" component={PrivacyPolicy} />
         </Switch>
+        <ScrollToTop />
         <Footer/>
-
       </div>
     </Router>
   );

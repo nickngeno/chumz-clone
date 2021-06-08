@@ -1,8 +1,13 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { Container, Row, Col, Card, CardDeck } from "react-bootstrap";
 import crosshair from "../images/graduation.cd424adf.jpg";
+import Contacts from "./Contacts";
 
 const Team = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <section classname="new-section">
       <Container>
@@ -272,6 +277,7 @@ const Team = () => {
           </CardDeck>
         </Row>
       </Container>
+      <Contacts />
     </section>
   );
 };
